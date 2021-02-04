@@ -12,6 +12,8 @@ public class Elevator {
 		btn.add(23);btn.add(4);btn.add(6);btn.add(10);btn.add(17);
 		goUp(7);	//	7층에서 시작
 	}
+	
+	/*엘리베이터 동작*/
 	public static void goUp(int n) {	//	올라가는 동작
 		System.out.println("올라갑니다.");
 		int last = 0;
