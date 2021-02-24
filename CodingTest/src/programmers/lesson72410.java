@@ -5,9 +5,8 @@ public class lesson72410 {
 	public static void main(String[] args) {
 		System.out.println(solution("=.="));
 	}
-
+	
 	public static String solution(String new_id) {
-
 		// 1단계 전부 소문자
 		new_id = new_id.toLowerCase();
 		System.out.println("1단계 " + new_id);
