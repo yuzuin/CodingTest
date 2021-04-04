@@ -59,20 +59,20 @@ public class lesson42577 {
 	
 	//	해시맵 사용. 확실히 빠르다...
 	public static boolean solution(String[] phone_book) {
-		HashMap<String,String> hashMap = new HashMap<>();
+		HashMap<String,String> hm = new HashMap<>();
 		
 		/**	해시맵에 phone_book 배열의 값들을 넣어주는 작업
 		 * key가 phone_book의 값이고 value는 "prefix"
 		 */
 		for(int i=0;i<phone_book.length;i++) {
-			hashMap.put(phone_book[i], "prefix");
+			hm.put(phone_book[i], "prefix");
 		}
 		
 		for(String phone : phone_book) {	//	여기서 phone은? 배열의 값들 순회
 			for(int i=0;i<phone.length();i++) {
 				/**	containsKey? 맵에 인자로 보낸 키가 있으면 true를 반환한다. 
 				/*	phone이 119일 경우, 1이 키에 있는가? 11이 키에 있는가? 119가 키에 있는가? 검사 */
-				if(hashMap.containsKey(phone.substring(0,i))) {
+				if(hm.containsKey(phone.substring(0,i))) {
 					return false;
 				}
 			}
